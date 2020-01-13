@@ -1,20 +1,27 @@
 # Dive into Deep Learning (D2L Book)
 
-[![Build Status](http://ci.d2l.ai/job/d2l-en/job/master/badge/icon)](http://ci.d2l.ai/job/d2l-en/job/master/)
+<!-- [![Build Status](http://ci.d2l.ai/job/d2l-en/job/master/badge/icon)](http://ci.d2l.ai/job/d2l-en/job/master/) -->
 
-[Book website](https://d2l.ai/) | [STAT 157 Course at UC Berkeley, Spring 2019](http://courses.d2l.ai/berkeley-stat-157/index.html)
+[Book website](https://github.com/ahmaurya/d2l-en)
 
-## Contribute ([learn how](https://d2l.ai/chapter_appendix-tools-for-deep-learning/contributing.html))
+<!-- ## Contribute ([learn how](https://d2l.ai/chapter_appendix-tools-for-deep-learning/contributing.html)) -->
 
-This open source book has benefited from pedagogical suggestions, typo corrections, and other improvements from community contributors. Your help is valuable for making the book better for everyone. We will [acknowledge](https://d2l.ai/chapter_preface/index.html#Acknowledgments) each D2L contributor in the book and send a free book (hard copy) to the *first 100 contributors* when it is published.
-
-**Dear [D2L contributors](https://github.com/d2l-ai/d2l-en/graphs/contributors), please email your GitHub ID, name, and mailing address to d2lbook.en@gmail.com. Thanks.**
-
-[Chinese version](https://github.com/d2l-ai/d2l-zh) | [Discuss and report issues](https://discuss.mxnet.io/)
+This open source book has benefited from pedagogical suggestions, typo corrections, and other improvements from community contributors. Your help is valuable for making the book better for everyone.
 
 ## Cite
 
 Please use the following bibtex entry to cite this book:
+
+```
+@book{ahmaurya2020dive,
+    title={Dive into Deep Learning with TensorFlow and Keras},
+    author={Abhinav Maurya},
+    note={\url{https://github.com/ahmaurya/d2l-en}},
+    year={2020}
+}
+```
+
+This book builds upon the original "Dive into Deep Learning" book:
 
 ```
 @book{zhang2020dive,
