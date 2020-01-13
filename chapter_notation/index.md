@@ -76,8 +76,3 @@ The notation used throughout this book is summarized below.
 ## Complexity
 
 * $\mathcal{O}$: Big O notation
-
-
-## [Discussions](https://discuss.mxnet.io/t/4367)
-
-![](../img/qr_notation.svg)
