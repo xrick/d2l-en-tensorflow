@@ -47,13 +47,11 @@ conda create --name d2l -y
 ## Downloading the D2L Notebooks
 
 Next, we need to download the code of this book. You can use the
-[link](https://d2l.ai/d2l-en-0.7.1.zip) to download and unzip the code.
-Alternatively, if you have `unzip` (otherwise run `sudo apt install unzip`) available:
+[link](https://github.com/ahmaurya/d2l-en/archive/master.zip) to download and unzip the code.
+Alternatively, if you have `git` (otherwise run `sudo apt install git-all`) available:
 
 ```bash
-mkdir d2l-en && cd d2l-en
-curl https://d2l.ai/d2l-en.zip -o d2l-en.zip
-unzip d2l-en.zip && rm d2l-en.zip
+git clone https://github.com/ahmaurya/d2l-en/
 ```
 
 
@@ -66,35 +64,27 @@ conda install python=3.7 pip -y
 ```
 
 
-## Installing MXNet and the `d2l` Package
+## Installing TensorFlow and the `d2l` Package
 
-Before installing MXNet, please first check
+Before installing TensorFlow, please first check
 whether or not you have proper GPUs on your machine
 (the GPUs that power the display on a standard laptop
 do not count for our purposes).
-If you are installing on a GPU server,
-proceed to :ref:`subsec_gpu` for instructions
-to install a GPU-supported MXNet.
-
-Otherwise, you can install the CPU version.
-That will be more than enough horsepower to get you
+That will be more than enough CPU horsepower to get you
 through the first few chapters but you will want
 to access GPUs before running larger models.
 
 ```bash
-# For Windows users
-pip install mxnet==1.6.0b20190926
-
-# For Linux and macOS users
-pip install mxnet==1.6.0b20191122
+# Current stable release for CPU and GPU
+pip install tensorflow
 ```
 
 
-We also install the `d2l` package that encapsulates frequently used
+We also install the `d2l-tf` package that encapsulates frequently used
 functions and classes in this book.
 
 ```bash
-pip install d2l
+pip install d2l-tf
 ```
 
 
@@ -107,63 +97,44 @@ jupyter notebook
 
 At this point, you can open http://localhost:8888 (it usually opens automatically) in your Web browser. Then we can run the code for each section of the book.
 Please always execute `conda activate d2l` to activate the runtime environment
-before running the code of the book or updating MXNet or the `d2l` package.
+before running the code of the book or updating TensorFlow or the `d2l` package.
 To exit the environment, run `conda deactivate`.
 
 
 ## Upgrading to a New Version
 
-Both this book and MXNet are keeping improving. Please check a new version from time to time.
+Both this book and TensorFlow are keeping improving. Please check a new version from time to time.
 
-1. The URL https://d2l.ai/d2l-en.zip always points to the latest contents.
-2. Please upgrade the `d2l` package by `pip install d2l --upgrade`.
-3. For the CPU version, MXNet can be upgraded by `pip install -U --pre mxnet`.
+1. The URL https://github.com/ahmaurya/d2l-en/ always points to the latest contents.
+2. Please upgrade the `d2l-tf` package by `pip install d2l-tf --upgrade`.
+3. For the unstable preview build released nightly, use `pip install -U tf-nightly`.
 
 
 ## GPU Support
 
 :label:`subsec_gpu`
 
-By default, MXNet is installed without GPU support
-to ensure that it will run on any computer (including most laptops).
-Part of this book requires or recommends running with GPU.
-If your computer has NVIDIA graphics cards and has installed [CUDA](https://developer.nvidia.com/cuda-downloads),
-then you should install a GPU-enabled MXNet.
-If you have installed the CPU-only version,
-you may need to remove it first by running:
+Since the 1.15 release, CPU and GPU support are included in a single TensorFlow package.
 
 ```bash
-pip uninstall mxnet
+# Current stable release for CPU and GPU
+pip install tensorflow
+```
+
+For releases 1.14 and older, TensorFlow had separate CPU and GPU packages. You can install them
+with one of the following command:
+
+```bash
+pip install tensorflow==1.14      # CPU
+pip install tensorflow-gpu==1.14  # GPU
 ```
 
 
-Then we need to find the CUDA version you installed.
-You may check it through `nvcc --version` or `cat /usr/local/cuda/version.txt`.
-Assume that you have installed CUDA 10.1,
-then you can install MXNet
-with the following command:
-
-```bash
-# For Windows users
-pip install mxnet-cu101==1.6.0b20190926
-
-# For Linux and macOS users
-pip install mxnet-cu101==1.6.0b20191122
-```
-
-
-Like the CPU version, the GPU-enabled MXNet can be upgraded by
-`pip install -U --pre mxnet-cu101`.
-You may change the last digits according to your CUDA version,
-e.g., `cu100` for CUDA 10.0 and `cu90` for CUDA 9.0.
-You can find all available MXNet versions via `pip search mxnet`.
+TensorFlow can be upgraded by
+`pip install -U --pre tensorflow`.
+You can find all available TensorFlow versions via `pip search tensorflow`.
 
 
 ## Exercises
 
 1. Download the code for the book and install the runtime environment.
-
-
-## [Discussions](https://discuss.mxnet.io/t/2315)
-
-![](../img/qr_install.svg)
