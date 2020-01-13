@@ -287,8 +287,7 @@ from collections import defaultdict
 from IPython import display
 import math
 from matplotlib import pyplot as plt
-from mxnet import autograd, context, gluon, image, init, np, npx
-from mxnet.gluon import nn, rnn
+import tensorflow as tf
 import os
 import pandas as pd
 import random
