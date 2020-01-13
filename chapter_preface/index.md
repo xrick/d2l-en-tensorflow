@@ -71,8 +71,8 @@ Our goal in this book is to present a unified resource
 to bring would-be practitioners up to speed.
 
 
-We started this book project in July 2017 when we needed
-to explain MXNet's (then new) Gluon interface to our users.
+We started this book project in Jan 2020 when we needed
+to explain TensorFlow's interface to our users.
 At the time, there were no resources that simultaneously
 (i) were up to date; (ii) covered the full breadth
 of modern machine learning with substantial technical depth;
@@ -109,7 +109,7 @@ to actually becoming an applied machine learning scientist;
 (3) include runnable code, showing readers *how* to solve problems in practice;
 (4) that allowed for rapid updates, both by us
 and also by the community at large;
-and (5) be complemented by a [forum](http://discuss.mxnet.io)
+and (5) be complemented by a [forum](https://www.tensorflow.org/community/forums)
 for interactive discussion of technical details and to answer questions.
 
 These goals were often in conflict.
@@ -173,13 +173,13 @@ ammunition to solve problems quickly,
 at the expense of requiring the reader
 to trust us with some curatorial decisions.
 
-Throughout, we will be working with the MXNet library,
+Throughout, we will be working with the TensorFlow library,
 which has the rare property of being flexible enough for research
 while being fast enough for production.
 This book will teach deep learning concepts from scratch.
 Sometimes, we want to delve into fine details about the models
 that would typically be hidden from the user
-by Gluon's advanced abstractions.
+by Keras's advanced abstractions.
 This comes up especially in the basic tutorials,
 where we want you to understand everything
 that happens in a given layer or optimizer.
@@ -187,9 +187,9 @@ In these cases, we will often present two versions of the example:
 one where we implement everything from scratch,
 relying only on the NumPy interface and automatic differentiation,
 and another, more practical example,
-where we write succinct code using Gluon.
+where we write succinct code using Keras.
 Once we have taught you how some component works,
-we can just use the Gluon version in subsequent tutorials.
+we can just use the Keras version in subsequent tutorials.
 
 
 ### Content and Structure
@@ -259,13 +259,13 @@ We are hopeful that as the theory of deep learning progresses,
 future editions of this book will be able to provide insights
 in places the present edition cannot.
 
-Most of the code in this book is based on Apache MXNet.
-MXNet is an open-source framework for deep learning
-and the preferred choice of AWS (Amazon Web Services),
+Most of the code in this book is based on TensorFlow.
+TensorFlow is an open-source framework for deep learning
+and the preferred choice of Google,
 as well as many colleges and companies.
-All of the code in this book has passed tests under the newest MXNet version.
+All of the code in this book has passed tests under the newest TensorFlow version.
 However, due to the rapid development of deep learning, some code
-*in the print edition* may not work properly in future versions of MXNet.
+*in the print edition* may not work properly in future versions of TensorFlow.
 However, we plan to keep the online version remain up-to-date.
 In case you encounter any such problems,
 please consult :ref:`chap_installation`
@@ -330,11 +330,11 @@ you may want to peruse this [Python tutorial](http://learnpython.org/).
 ### Forum
 
 Associated with this book, we have launched a discussion forum,
-located at [discuss.mxnet.io](https://discuss.mxnet.io/).
+located at [www.tensorflow.org/community/forums](https://www.tensorflow.org/community/forums).
 When you have questions on any section of the book,
 you can find the associated discussion page by scanning the QR code
 at the end of the section to participate in its discussions.
-The authors of this book and broader MXNet developer community
+The authors of this book and broader TensorFlow developer community
 frequently participate in forum discussions.
 
 
@@ -372,9 +372,9 @@ Raju Gulabani, Charlie Bell, and Andrew Jassy for their generous support in writ
 * Deep learning has revolutionized pattern recognition, introducing technology that now powers a wide range of  technologies, including computer vision, natural language processing, automatic speech recognition.
 * To successfully apply deep learning, you must understand how to cast a problem, the mathematics of modeling, the algorithms for fitting your models to data, and the engineering techniques to implement it all.
 * This book presents a comprehensive resource, including prose, figures, mathematics, and code, all in one place.
-* To answer questions related to this book, visit our forum at https://discuss.mxnet.io/.
-* Apache MXNet is a powerful library for coding up deep learning models and running them in parallel across GPU cores.
-* Gluon is a high level library that makes it easy to code up deep learning models using Apache MXNet.
+* To answer questions related to this book, visit our forum at https://www.tensorflow.org/community/forums.
+* TensorFlow is a powerful library for coding up deep learning models and running them in parallel across GPU cores.
+* Keras is a high level library that makes it easy to code up deep learning models using TensorFlow.
 * Conda is a Python package manager that ensures that all software dependencies are met.
 * All notebooks are available for download on GitHub.
 * If you plan to run this code on GPUs, do not forget to install the necessary drivers and update your configuration.
@@ -382,7 +382,7 @@ Raju Gulabani, Charlie Bell, and Andrew Jassy for their generous support in writ
 
 ## Exercises
 
-1. Register an account on the discussion forum of this book [discuss.mxnet.io](https://discuss.mxnet.io/).
+1. Register an account on the discussion forum of this book [www.tensorflow.org/community/forums](https://www.tensorflow.org/community/forums).
 1. Install Python on your computer.
 1. Follow the links at the bottom of the section to the forum, where you will be able to seek out help and discuss the book and find answers to your questions by engaging the authors and broader community.
 1. Create an account on the forum and introduce yourself.
