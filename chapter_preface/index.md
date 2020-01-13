@@ -386,8 +386,3 @@ Raju Gulabani, Charlie Bell, and Andrew Jassy for their generous support in writ
 1. Install Python on your computer.
 1. Follow the links at the bottom of the section to the forum, where you will be able to seek out help and discuss the book and find answers to your questions by engaging the authors and broader community.
 1. Create an account on the forum and introduce yourself.
-
-
-## [Discussions](https://discuss.mxnet.io/t/2311)
-
-![](../img/qr_preface.svg)
