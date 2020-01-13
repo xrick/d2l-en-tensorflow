@@ -602,13 +602,13 @@ the variance owes to some factors besides your two features.
 In these cases, we will try to learn models
 that minimize the distance between our predictions and the observed values.
 In most of our chapters, we will focus on one of two very common losses,
-the [L1 loss](http://mxnet.incubator.apache.org/api/python/gluon/loss.html#mxnet.gluon.loss.L1Loss)
+the [L1 loss](https://www.tensorflow.org/api_docs/python/tf/keras/losses/MeanAbsoluteError)
 where
 
 $$l(y, y') = \sum_i |y_i-y_i'|$$
 
 and the least mean squares loss, or
-[L2 loss](http://mxnet.incubator.apache.org/api/python/gluon/loss.html#mxnet.gluon.loss.L2Loss),
+[L2 loss](https://www.tensorflow.org/api_docs/python/tf/keras/losses/MeanSquaredError),
 where
 
 $$l(y, y') = \sum_i (y_i - y_i')^2.$$
@@ -676,7 +676,7 @@ Common examples include hand-written character recognition
 While we attacked regression problems by trying
 to minimize the L1 or L2 loss functions,
 the common loss function for classification problems is called cross-entropy.
-In MXNet Gluon, the corresponding loss function can be found [here](https://mxnet.incubator.apache.org/api/python/gluon/loss.html#mxnet.gluon.loss.SoftmaxCrossEntropyLoss).
+In TensorFlow Keras, the corresponding loss function can be found [here](https://www.tensorflow.org/api_docs/python/tf/keras/losses/CategoricalCrossentropy).
 
 Note that the most likely class is not necessarily
 the one that you are going to use for your decision.
@@ -1413,13 +1413,14 @@ over the past decade.
   [Theano](https://github.com/Theano/Theano).
   Many seminal papers were written using these tools.
   By now, they have been superseded by
-  [TensorFlow](https://github.com/tensorflow/tensorflow),
-  often used via its high level API [Keras](https://github.com/keras-team/keras), [CNTK](https://github.com/Microsoft/CNTK), [Caffe 2](https://github.com/caffe2/caffe2), and [Apache MxNet](https://github.com/apache/incubator-mxnet). The third generation of tools, namely imperative tools for deep learning,
+  [TensorFlow](https://github.com/tensorflow/tensorflow), 
+  [CNTK](https://github.com/Microsoft/CNTK), [Caffe 2](https://github.com/caffe2/caffe2), and [Apache MxNet](https://github.com/apache/incubator-mxnet). The third generation of tools, namely imperative tools for deep learning,
   was arguably spearheaded by [Chainer](https://github.com/chainer/chainer),
   which used a syntax similar to Python NumPy to describe models.
-  This idea was adopted by [PyTorch](https://github.com/pytorch/pytorch)
+  This idea was adopted by [PyTorch](https://github.com/pytorch/pytorch), the 
+  [Keras API](https://github.com/keras-team/keras) which works with TensorFlow, CNTK, and Theano,
   and the [Gluon API](https://github.com/apache/incubator-mxnet) of MXNet.
-  It is the latter group that this course uses to teach deep learning.
+  It is the TensorFlow+Keras combination that this course uses to teach deep learning.
 
 The division of labor between systems researchers building better tools
 and statistical modelers building better networks
@@ -1546,7 +1547,3 @@ than the potential of malevolent superintelligence to destroy humanity.
 1. Which problems that you encounter have many examples for how to solve them, yet no specific way to automate them? These may be prime candidates for using deep learning.
 1. Viewing the development of artificial intelligence as a new industrial revolution, what is the relationship between algorithms and data? Is it similar to steam engines and coal (what is the fundamental difference)?
 1. Where else can you apply the end-to-end training approach? Physics? Engineering? Econometrics?
-
-## [Discussions](https://discuss.mxnet.io/t/2310)
-
-![](../img/qr_introduction.svg)
