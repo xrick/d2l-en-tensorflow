@@ -1,4 +1,4 @@
-# Dive into Deep Learning (D2L Book)
+# Dive into Deep Learning with TensorFlow (D2L-TF Book)
 
 <!-- [![Build Status](http://ci.d2l.ai/job/d2l-en/job/master/badge/icon)](http://ci.d2l.ai/job/d2l-en/job/master/) -->
 
@@ -14,7 +14,7 @@ Please use the following bibtex entry to cite this book:
 
 ```
 @book{ahmaurya2020dive,
-    title={Dive into Deep Learning with TensorFlow and Keras},
+    title={Dive into Deep Learning with TensorFlow},
     author={Abhinav Maurya},
     note={\url{https://github.com/ahmaurya/d2l-en}},
     year={2020}
