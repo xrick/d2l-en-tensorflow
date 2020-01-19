@@ -1417,9 +1417,9 @@ over the past decade.
   [CNTK](https://github.com/Microsoft/CNTK), [Caffe 2](https://github.com/caffe2/caffe2), and [Apache MxNet](https://github.com/apache/incubator-mxnet). The third generation of tools, namely imperative tools for deep learning,
   was arguably spearheaded by [Chainer](https://github.com/chainer/chainer),
   which used a syntax similar to Python NumPy to describe models.
-  This idea was adopted by [PyTorch](https://github.com/pytorch/pytorch), the 
-  [Keras API](https://github.com/keras-team/keras) which works with TensorFlow, CNTK, and Theano,
-  and the [Gluon API](https://github.com/apache/incubator-mxnet) of MXNet.
+  This idea was adopted by [PyTorch](https://github.com/pytorch/pytorch),
+  the [Gluon API](https://github.com/apache/incubator-mxnet) of MXNet, and the 
+  [Keras API](https://github.com/keras-team/keras) which works with TensorFlow, CNTK, and Theano.
   It is the TensorFlow+Keras combination that this course uses to teach deep learning.
 
 The division of labor between systems researchers building better tools
