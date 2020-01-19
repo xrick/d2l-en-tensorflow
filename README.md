@@ -2,7 +2,7 @@
 
 <!-- [![Build Status](http://ci.d2l.ai/job/d2l-en/job/master/badge/icon)](http://ci.d2l.ai/job/d2l-en/job/master/) -->
 
-[Book website](https://github.com/ahmaurya/d2l-en)
+[Book website](https://github.com/ahmaurya/d2l-en-tensorflow)
 
 <!-- ## Contribute ([learn how](https://d2l.ai/chapter_appendix-tools-for-deep-learning/contributing.html)) -->
 
@@ -16,7 +16,7 @@ Please use the following bibtex entry to cite this book:
 @book{ahmaurya2020dive,
     title={Dive into Deep Learning with TensorFlow},
     author={Abhinav Maurya},
-    note={\url{https://github.com/ahmaurya/d2l-en}},
+    note={\url{https://github.com/ahmaurya/d2l-en-tensorflow}},
     year={2020}
 }
 ```
